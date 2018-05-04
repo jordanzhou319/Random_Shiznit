@@ -62,5 +62,5 @@ while True:
 		exit()
 		
 	else:
-	  print ("only a, b, or q are acceptable inputs")
+	  print ("only a, b, c, d, or q are acceptable inputs")
 	  print("\n")
