@@ -72,8 +72,6 @@ else:
 
 #splice based on exon locations
 
-import itertools as it
-
 va = int(input('Number of exons: '))
 gi = input('DNA Sequence: ')
 
@@ -94,7 +92,7 @@ for blue_waffle in range(0,va):
     blue = int(input('Beginning of exon ' + str(na) + ': '))
     penetration.append(blue-1)
     waffle = int(input('End of exon ' + str(na) + ': '))
-    printers.append(waffle)
+    printers.append(waffle-1)
     na += 1
 
 print('\n')
