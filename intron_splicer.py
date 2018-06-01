@@ -1,3 +1,5 @@
+#Splice based on intron locations
+
 va = int(input('Number of introns: '))
 gi = input('DNA Sequence: ')
 
@@ -64,6 +66,83 @@ else:
     herpes = sum(hookers)
     chlamydia = (herpes/len(gi)) 
     print('Complete coding region:')
+    print(*porn,sep='')
+    print('Total coding length: ' + str(herpes) + 'bp')
+    print('Percent coding: ' + str('{:.2%}'.format(chlamydia)))
+
+#splice based on exon locations
+
+import itertools as it
+
+va = int(input('Number of exons: '))
+gi = input('DNA Sequence: ')
+
+na = 1
+stupid = 0
+pirate_hooker = 1
+
+whore_island = gi.replace(' ','')
+mantooth = ''.join(i for i in whore_island if not i.isdigit())
+
+penetration = []
+printers = []
+hookers = []
+porn = []
+anal = []
+
+for blue_waffle in range(0,va):
+    blue = int(input('Beginning of exon ' + str(na) + ': '))
+    penetration.append(blue-1)
+    waffle = int(input('End of exon ' + str(na) + ': '))
+    printers.append(waffle)
+    na += 1
+
+print('\n')
+
+if va == 1:
+    fucker = mantooth[:penetration[0]]
+    porn.append(fucker.lower())
+    
+    trump = mantooth[penetration[0] : printers[0]]
+    porn.append(trump)
+    hookers.append(len(trump))
+    print('Exon: ' + str(trump))
+    print('Exon Length: ' + str(len(trump)) + 'bp')
+    print('\n')
+    
+    twat = mantooth[printers[-1]:]
+    porn.append(twat.lower())
+    
+    print('Sequence including introns(lowercase):')
+    print(*porn,sep='')
+    herpes = sum(hookers)
+    chlamydia = (herpes/len(gi))
+    print('Total coding length: ' + str(herpes) + 'bp')
+    print('Percent coding: ' + str('{:.2%}'.format(chlamydia)))
+
+else:
+    fucker = mantooth[:penetration[0]]
+    porn.append(fucker.lower())
+    
+    for heroin_users in range(0,va):
+        heroin = mantooth[penetration[stupid]:printers[stupid]]
+        penetration.append(None)
+        users = mantooth[printers[stupid]:penetration[stupid+1]]
+        print('Exon ' + str(pirate_hooker) + ': ' + str(heroin))
+        print('Exon Length: ' + str(len(heroin)) + 'bp')
+        print('\n')
+        stupid += 1
+        pirate_hooker += 1
+        hookers.append(len(heroin))
+        porn.append(heroin)
+        porn.append(users.lower())
+        anal.append(heroin)
+
+    herpes = sum(hookers)
+    chlamydia = (herpes/len(gi)) 
+    print('Complete coding region:')
+    print(*anal,sep='')
+    print('Sequence including introns(lowercase):')
     print(*porn,sep='')
     print('Total coding length: ' + str(herpes) + 'bp')
     print('Percent coding: ' + str('{:.2%}'.format(chlamydia)))
