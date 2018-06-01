@@ -23,7 +23,7 @@ print('\n')
 
 if va == 1:
     trump = mantooth[:penetration[0]] + mantooth[printers[0]:]
-    print('Exon 2: ' + str(trump))
+    print('Exon: ' + str(trump))
     print('Exon Length: ' + str(len(trump)) + 'bp')
 
 else:
